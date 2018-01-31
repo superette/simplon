@@ -1,0 +1,20 @@
+Créer une Instance de base de données PostgreSQL 
+
+Lors de l'étape précédente, l'installation des binaires PostgreSQL
+a été réalisée, ainsi que la création de l'utilisateur postgres
+
+Une instance par défaut a été créée.
+
+Quelles sont les valeurs par défaut des variables suivantes :
+
+PGHOST
+PGDATABASE
+PGUSER
+PGPORT
+PGDATADIR
+
+Créons maintenant une instance personnalisée avec les valeurs suivantes :
+
+PGPORT = 5434 
+PGDATADIR = /data/plop/instancepostgres/
+

@@ -1,0 +1,43 @@
+Installer PostgreSQL
+
+Prérequis : Une machine (physique ou virtuelle) sous linux (idéalement debian)
+
+# Configuration du dépot :
+
+Créer le fichier /etc/apt/sources.list.d/pgdg.list
+
+et y insérer la ligne suivante :
+
+`deb http://apt.postgresql.org/pub/repos/apt/ YOUR_DEBIAN_VERSION_HERE-pgdg main`
+
+Lancer la commande suivante pour récupérer la clé de chiffrement du dépot
+et pouvoir demander la mise à jour des paquets :
+
+```
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | \
+  sudo apt-key add -
+sudo apt-get update 
+```
+
+# Installation des binaires :
+
+Lancer la commande suivante :
+
+`apt-get install postgresql-9.6`
+
+# Ressources en ligne : 
+
+https://www.postgresql.org/download/linux/
+
+
+## Questions :
+
+- Qu'est ce qui a été créé sur ma machine lorsque j'ai réalisé cette opération ? 
+
+Astuce : 
+
+Binaires ? 
+Fichiers ?
+Processus ? 
+Utilisateur(s) ?
+
